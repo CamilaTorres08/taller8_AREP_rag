@@ -1,4 +1,4 @@
-# Taller 8 - RAG (Retrieval-Augmented Generation) con LangChain
+# Taller 8 - RAG (Retrieval-Augmented Generation) 
 
 ## Descripción del Proyecto
 
@@ -155,6 +155,10 @@ pip install python-dotenv
 ## Configuración
 
 ### 1. Configurar Variables de Entorno
+
+Cree una cuenta en Langsmith y obtenga la API KEY:
+
+<img width="1022" height="776" alt="image" src="https://github.com/user-attachments/assets/c2ac085e-4724-4f17-a832-7ed50f9c6e7a" />
 
 Crear un archivo `.env` en la raíz del proyecto:
 
