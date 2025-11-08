@@ -16,57 +16,14 @@ El proyecto sigue el tutorial oficial de LangChain ([LangChain RAG Tutorial](htt
 
 ### Diagrama de Arquitectura
 
-```
-┌─────────────────┐
-│  Documento Web  │
-│  (Blog Post)    │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────────────┐
-│  WebBaseLoader (bs4)    │
-│  Carga de contenido     │
-└────────┬────────────────┘
-         │
-         ▼
-┌──────────────────────────────┐
-│  RecursiveCharacterSplitter  │
-│  División en chunks          │
-│  (1000 chars, overlap 200)   │
-└────────┬─────────────────────┘
-         │
-         ▼
-┌──────────────────────────────┐
-│  OpenAI Embeddings           │
-│  (text-embedding-3-large)    │
-└────────┬─────────────────────┘
-         │
-         ▼
-┌──────────────────────────────┐
-│  InMemoryVectorStore         │
-│  Almacenamiento vectorial    │
-└────────┬─────────────────────┘
-         │
-         ▼
-┌──────────────────────────────┐
-│  Similarity Search           │
-│  Recuperación de contexto    │
-└────────┬─────────────────────┘
-         │
-         ▼
-┌──────────────────────────────┐
-│  LangChain Agent + GPT-4     │
-│  Generación de respuesta     │
-└──────────────────────────────┘
-```
+<img src="diagrama.png" />
 
 ### Componentes Principales
 
-#### 1. **Cargador de Documentos (WebBaseLoader)**
-- **Propósito**: Extraer contenido de páginas web
+#### 1. **Cargador de Documentos **
+- **Propósito**: Extraer contenido 
 - **Tecnología**: BeautifulSoup4 (bs4)
 - **Configuración**: Extrae únicamente título, encabezados y contenido del post
-- **Fuente**: Blog post sobre "LLM Powered Autonomous Agents" de Lilian Weng
 
 #### 2. **Divisor de Texto (RecursiveCharacterTextSplitter)**
 - **Propósito**: Dividir documentos largos en fragmentos manejables
