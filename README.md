@@ -12,7 +12,7 @@ Este proyecto implementa un sistema RAG (Retrieval-Augmented Generation) utiliza
 
 ### Componentes Principales
 
-#### 1. **Cargador de Documentos **
+#### 1. **Cargador de Documentos**
 - **Propósito**: Extraer contenido 
 - **Tecnología**: BeautifulSoup4 (bs4)
 - **Configuración**: Extrae únicamente título, encabezados y contenido del post
