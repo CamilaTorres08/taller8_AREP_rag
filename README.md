@@ -176,9 +176,6 @@ Instala todas las bibliotecas necesarias.
 #### Paso 2: Configuración de Credenciales (Celdas 1, 4, 6)
 Configura las API keys y el modelo de lenguaje.
 
-#### Paso 3: Inicialización de Componentes (Celdas 8)
-Crea el vector store en memoria.
-
 #### Paso 4: Carga y Procesamiento de Documentos (Celdas 9-11)
 ```python
 # Resultado esperado:
